@@ -74,7 +74,7 @@ function calculate_generation(board) {
 function count_neighbors(board, row, col) {
     return (
         neighbors
-            // Get all absolue positions of neighbors
+            // Get all absolute positions of neighbors
             .map(neighbor => new Delta(neighbor.row + row, neighbor.col + col))
 
             // Filter out all neighbors that are out of bounds
